@@ -125,8 +125,10 @@ def run_one_target(session: requests.Session, target: str, delay_s: float = 0.05
             pdb_ids: List[str] = []
         else:
             j = resp.json()
-            # With results_verbosity="compact", results are under "result_set" as strings in "identifier"
-            pdb_ids = [r["identifier"] for r in j.get("result_set", [])]
+            result_set = j.get("result_set", [])
+            # Depending on results_verbosity/API behavior, each entry may be either
+            # a dict with an "identifier" key or a bare identifier string.
+            pdb_ids = [r["identifier"] if isinstance(r, dict) else r for r in result_set]
 
         if pdb_ids:
             time.sleep(delay_s)
