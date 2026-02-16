@@ -161,6 +161,16 @@ def run_one_target(
         q = build_query(target, mode)
         resp = post_json_with_retries(session, SEARCH_URL, q)
         pdb_ids = parse_result_set(resp)
+
+        if resp.status_code == 204:
+            pdb_ids: List[str] = []
+        else:
+            j = resp.json()
+            result_set = j.get("result_set", [])
+            # Depending on results_verbosity/API behavior, each entry may be either
+            # a dict with an "identifier" key or a bare identifier string.
+            pdb_ids = [r["identifier"] if isinstance(r, dict) else r for r in result_set]
+
         if pdb_ids:
             time.sleep(delay_s)
             return target, pdb_ids, mode
