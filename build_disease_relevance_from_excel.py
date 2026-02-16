@@ -94,6 +94,30 @@ def parse_ensembl_gene_id(mygene_json: dict[str, Any]) -> str | None:
     return None
 
 
+
+
+def parse_subcellular_localisation(mygene_json: dict[str, Any]) -> str:
+    go = mygene_json.get("go")
+    if not isinstance(go, dict):
+        return ""
+
+    cc = go.get("CC")
+    terms: list[str] = []
+    entries = cc if isinstance(cc, list) else [cc]
+    for entry in entries:
+        if isinstance(entry, dict):
+            term = entry.get("term")
+            if isinstance(term, str) and term.strip():
+                terms.append(term.strip())
+
+    # Deduplicate while preserving order and keep the string compact for CSV.
+    seen = set()
+    uniq = []
+    for t in terms:
+        if t not in seen:
+            seen.add(t)
+            uniq.append(t)
+    return "; ".join(uniq[:5])
 def pick_top_scores(items: list[dict[str, Any]], top_n: int = 2) -> list[tuple[str, float]]:
     vals: list[tuple[str, float]] = []
     for d in items or []:
@@ -199,6 +223,7 @@ def main() -> int:
         "disease_relevance_paragraph": [],
         "opentargets_target_url": [],
         "mapping_source_url": [],
+        "subcellular_localisation": [],
         "opentargets_query_ok": [],
         "notes": [],
     }
@@ -223,6 +248,7 @@ def main() -> int:
             ot_ok = False
 
             source_url = ""
+            subcellular_localisation = ""
 
             entrez_raw = row.get("Human_Entrez")
             try:
@@ -243,6 +269,7 @@ def main() -> int:
                     mapping_status = "MYGENE_NOT_FOUND"
                     notes.append("MyGene returned notfound=true")
                 else:
+                    subcellular_localisation = parse_subcellular_localisation(mygene_json)
                     gene = parse_ensembl_gene_id(mygene_json)
                     if gene:
                         ensg = gene
@@ -329,6 +356,7 @@ def main() -> int:
             new_cols["disease_relevance_paragraph"].append(paragraph)
             new_cols["opentargets_target_url"].append(f"https://platform.opentargets.org/target/{ensg}" if ensg else "")
             new_cols["mapping_source_url"].append(source_url)
+            new_cols["subcellular_localisation"].append(subcellular_localisation)
             new_cols["opentargets_query_ok"].append(bool(ot_ok))
             new_cols["notes"].append("; ".join(notes))
 
