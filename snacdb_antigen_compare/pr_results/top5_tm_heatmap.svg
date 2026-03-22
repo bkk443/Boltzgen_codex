@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="878" viewBox="0 0 1180 878">
+<style>
+text { font-family: Arial, sans-serif; }
+.title { font-size: 24px; font-weight: bold; }
+.subtitle { font-size: 14px; fill: #444; }
+.label { font-size: 12px; fill: #111; }
+.celltext { font-size: 11px; fill: #111; }
+.header { font-size: 12px; font-weight: bold; }
+</style>
+<text class="title" x="520" y="35">Top-5 TM-score heatmap by workbook target</text>
+<text class="subtitle" x="520" y="58">Rows are targets sorted by best hit. Columns are hit rank 1–5. Darker cells mean higher TM-scores.</text>
+<text class="header" x="548" y="92">Rank 1</text>
+<text class="header" x="658" y="92">Rank 2</text>
+<text class="header" x="768" y="92">Rank 3</text>
+<text class="header" x="878" y="92">Rank 4</text>
+<text class="header" x="988" y="92">Rank 5</text>
+<text class="label" x="510" y="127" text-anchor="end">MTOR associated protein, LST8 homolog (S. cerevisiae)</text>
+<rect x="520" y="110" width="104" height="22" fill="#954e3b" stroke="#ddd"/>
+<text class="celltext" x="544" y="127">0.573</text>
+<rect x="630" y="110" width="104" height="22" fill="#9e5b4a" stroke="#ddd"/>
+<text class="celltext" x="654" y="127">0.529</text>
+<rect x="740" y="110" width="104" height="22" fill="#a36453" stroke="#ddd"/>
+<text class="celltext" x="764" y="127">0.501</text>
+<rect x="850" y="110" width="104" height="22" fill="#a36555" stroke="#ddd"/>
+<text class="celltext" x="874" y="127">0.497</text>
+<rect x="960" y="110" width="104" height="22" fill="#a46655" stroke="#ddd"/>
+<text class="celltext" x="984" y="127">0.496</text>
+<text class="label" x="510" y="153" text-anchor="end">ring-box 1, E3 ubiquitin protein ligase</text>
+<rect x="520" y="136" width="104" height="22" fill="#9e5c4b" stroke="#ddd"/>
+<text class="celltext" x="544" y="153">0.525</text>
+<rect x="630" y="136" width="104" height="22" fill="#ede0dd" stroke="#ddd"/>
+<text class="celltext" x="654" y="153">0.098</text>
+<rect x="740" y="136" width="104" height="22" fill="#ede0dd" stroke="#ddd"/>
+<text class="celltext" x="764" y="153">0.098</text>
+<rect x="850" y="136" width="104" height="22" fill="#ede1dd" stroke="#ddd"/>
+<text class="celltext" x="874" y="153">0.097</text>
+<rect x="960" y="136" width="104" height="22" fill="#ede1dd" stroke="#ddd"/>
+<text class="celltext" x="984" y="153">0.097</text>
+<text class="label" x="510" y="179" text-anchor="end">cell division cycle 42</text>
+<rect x="520" y="162" width="104" height="22" fill="#a66a5a" stroke="#ddd"/>
+<text class="celltext" x="544" y="179">0.482</text>
+<rect x="630" y="162" width="104" height="22" fill="#a66a5a" stroke="#ddd"/>
+<text class="celltext" x="654" y="179">0.482</text>
+<rect x="740" y="162" width="104" height="22" fill="#b7877a" stroke="#ddd"/>
+<text class="celltext" x="764" y="179">0.388</text>
+<rect x="850" y="162" width="104" height="22" fill="#e4d1cc" stroke="#ddd"/>
+<text class="celltext" x="874" y="179">0.147</text>
+<rect x="960" y="162" width="104" height="22" fill="#e4d1cc" stroke="#ddd"/>
+<text class="celltext" x="984" y="179">0.147</text>
+<text class="label" x="510" y="205" text-anchor="end">Ran GTPase activating protein 1</text>
+<rect x="520" y="188" width="104" height="22" fill="#aa7061" stroke="#ddd"/>
+<text class="celltext" x="544" y="205">0.461</text>
+<rect x="630" y="188" width="104" height="22" fill="#b27e70" stroke="#ddd"/>
+<text class="celltext" x="654" y="205">0.417</text>
+<rect x="740" y="188" width="104" height="22" fill="#ecdfdc" stroke="#ddd"/>
+<text class="celltext" x="764" y="205">0.102</text>
+<rect x="850" y="188" width="104" height="22" fill="#eee3e0" stroke="#ddd"/>
+<text class="celltext" x="874" y="205">0.091</text>
+<rect x="960" y="188" width="104" height="22" fill="#eee3e0" stroke="#ddd"/>
+<text class="celltext" x="984" y="205">0.091</text>
+<text class="label" x="510" y="231" text-anchor="end">aminolevulinate dehydratase</text>
+<rect x="520" y="214" width="104" height="22" fill="#b98a7d" stroke="#ddd"/>
+<text class="celltext" x="544" y="231">0.379</text>
+<rect x="630" y="214" width="104" height="22" fill="#b98a7d" stroke="#ddd"/>
+<text class="celltext" x="654" y="231">0.379</text>
+<rect x="740" y="214" width="104" height="22" fill="#bc8e82" stroke="#ddd"/>
+<text class="celltext" x="764" y="231">0.365</text>
+<rect x="850" y="214" width="104" height="22" fill="#bc8e82" stroke="#ddd"/>
+<text class="celltext" x="874" y="231">0.365</text>
+<rect x="960" y="214" width="104" height="22" fill="#bd9085" stroke="#ddd"/>
+<text class="celltext" x="984" y="231">0.357</text>
+<text class="label" x="510" y="257" text-anchor="end">lysyl-tRNA synthetase</text>
+<rect x="520" y="240" width="104" height="22" fill="#c2998e" stroke="#ddd"/>
+<text class="celltext" x="544" y="257">0.329</text>
+<rect x="630" y="240" width="104" height="22" fill="#c6a096" stroke="#ddd"/>
+<text class="celltext" x="654" y="257">0.307</text>
+<rect x="740" y="240" width="104" height="22" fill="#caa79d" stroke="#ddd"/>
+<text class="celltext" x="764" y="257">0.284</text>
+<rect x="850" y="240" width="104" height="22" fill="#caa79d" stroke="#ddd"/>
+<text class="celltext" x="874" y="257">0.284</text>
+<rect x="960" y="240" width="104" height="22" fill="#d2b3ab" stroke="#ddd"/>
+<text class="celltext" x="984" y="257">0.244</text>
+<text class="label" x="510" y="283" text-anchor="end">NUF2, NDC80 kinetochore complex component</text>
+<rect x="520" y="266" width="104" height="22" fill="#c7a298" stroke="#ddd"/>
+<text class="celltext" x="544" y="283">0.301</text>
+<rect x="630" y="266" width="104" height="22" fill="#e6d5d0" stroke="#ddd"/>
+<text class="celltext" x="654" y="283">0.136</text>
+<rect x="740" y="266" width="104" height="22" fill="#e6d5d0" stroke="#ddd"/>
+<text class="celltext" x="764" y="283">0.135</text>
+<rect x="850" y="266" width="104" height="22" fill="#e6d5d0" stroke="#ddd"/>
+<text class="celltext" x="874" y="283">0.135</text>
+<rect x="960" y="266" width="104" height="22" fill="#e6d5d0" stroke="#ddd"/>
+<text class="celltext" x="984" y="283">0.135</text>
+<text class="label" x="510" y="309" text-anchor="end">triosephosphate isomerase 1</text>
+<rect x="520" y="292" width="104" height="22" fill="#c9a59c" stroke="#ddd"/>
+<text class="celltext" x="544" y="309">0.289</text>
+<rect x="630" y="292" width="104" height="22" fill="#c9a59c" stroke="#ddd"/>
+<text class="celltext" x="654" y="309">0.289</text>
+<rect x="740" y="292" width="104" height="22" fill="#ccaaa1" stroke="#ddd"/>
+<text class="celltext" x="764" y="309">0.275</text>
+<rect x="850" y="292" width="104" height="22" fill="#ccaaa1" stroke="#ddd"/>
+<text class="celltext" x="874" y="309">0.275</text>
+<rect x="960" y="292" width="104" height="22" fill="#cdaba2" stroke="#ddd"/>
+<text class="celltext" x="984" y="309">0.271</text>
+<text class="label" x="510" y="335" text-anchor="end">protein phosphatase 1, regulatory subunit 7</text>
+<rect x="520" y="318" width="104" height="22" fill="#cca9a0" stroke="#ddd"/>
+<text class="celltext" x="544" y="335">0.278</text>
+<rect x="630" y="318" width="104" height="22" fill="#ceada4" stroke="#ddd"/>
+<text class="celltext" x="654" y="335">0.265</text>
+<rect x="740" y="318" width="104" height="22" fill="#e3d1cc" stroke="#ddd"/>
+<text class="celltext" x="764" y="335">0.147</text>
+<rect x="850" y="318" width="104" height="22" fill="#e6d5d0" stroke="#ddd"/>
+<text class="celltext" x="874" y="335">0.135</text>
+<rect x="960" y="318" width="104" height="22" fill="#e7d6d2" stroke="#ddd"/>
+<text class="celltext" x="984" y="335">0.130</text>
+<text class="label" x="510" y="361" text-anchor="end">phosphopantothenoylcysteine synthetase</text>
+<rect x="520" y="344" width="104" height="22" fill="#d2b4ac" stroke="#ddd"/>
+<text class="celltext" x="544" y="361">0.241</text>
+<rect x="630" y="344" width="104" height="22" fill="#d2b4ac" stroke="#ddd"/>
+<text class="celltext" x="654" y="361">0.241</text>
+<rect x="740" y="344" width="104" height="22" fill="#d6bab3" stroke="#ddd"/>
+<text class="celltext" x="764" y="361">0.222</text>
+<rect x="850" y="344" width="104" height="22" fill="#e3d1cc" stroke="#ddd"/>
+<text class="celltext" x="874" y="361">0.147</text>
+<rect x="960" y="344" width="104" height="22" fill="#e6d5d0" stroke="#ddd"/>
+<text class="celltext" x="984" y="361">0.136</text>
+<text class="label" x="510" y="387" text-anchor="end">thiamin pyrophosphokinase 1</text>
+<rect x="520" y="370" width="104" height="22" fill="#d4b6ae" stroke="#ddd"/>
+<text class="celltext" x="544" y="387">0.234</text>
+<rect x="630" y="370" width="104" height="22" fill="#d4b6ae" stroke="#ddd"/>
+<text class="celltext" x="654" y="387">0.234</text>
+<rect x="740" y="370" width="104" height="22" fill="#dfc9c3" stroke="#ddd"/>
+<text class="celltext" x="764" y="387">0.173</text>
+<rect x="850" y="370" width="104" height="22" fill="#dfc9c3" stroke="#ddd"/>
+<text class="celltext" x="874" y="387">0.173</text>
+<rect x="960" y="370" width="104" height="22" fill="#dfc9c4" stroke="#ddd"/>
+<text class="celltext" x="984" y="387">0.172</text>
+<text class="label" x="510" y="413" text-anchor="end">UDP-glucose pyrophosphorylase 2</text>
+<rect x="520" y="396" width="104" height="22" fill="#dbc3bd" stroke="#ddd"/>
+<text class="celltext" x="544" y="413">0.193</text>
+<rect x="630" y="396" width="104" height="22" fill="#dbc3bd" stroke="#ddd"/>
+<text class="celltext" x="654" y="413">0.193</text>
+<rect x="740" y="396" width="104" height="22" fill="#e9dbd7" stroke="#ddd"/>
+<text class="celltext" x="764" y="413">0.117</text>
+<rect x="850" y="396" width="104" height="22" fill="#ebdeda" stroke="#ddd"/>
+<text class="celltext" x="874" y="413">0.107</text>
+<rect x="960" y="396" width="104" height="22" fill="#ecdfdc" stroke="#ddd"/>
+<text class="celltext" x="984" y="413">0.101</text>
+<text class="label" x="510" y="439" text-anchor="end">deoxyuridine triphosphatase</text>
+<rect x="520" y="422" width="104" height="22" fill="#e1cdc7" stroke="#ddd"/>
+<text class="celltext" x="544" y="439">0.161</text>
+<rect x="630" y="422" width="104" height="22" fill="#e1cdc8" stroke="#ddd"/>
+<text class="celltext" x="654" y="439">0.159</text>
+<rect x="740" y="422" width="104" height="22" fill="#e1cec8" stroke="#ddd"/>
+<text class="celltext" x="764" y="439">0.159</text>
+<rect x="850" y="422" width="104" height="22" fill="#e2cec9" stroke="#ddd"/>
+<text class="celltext" x="874" y="439">0.156</text>
+<rect x="960" y="422" width="104" height="22" fill="#e2cfca" stroke="#ddd"/>
+<text class="celltext" x="984" y="439">0.155</text>
+<text class="label" x="510" y="465" text-anchor="end">GTP cyclohydrolase 1</text>
+<rect x="520" y="448" width="104" height="22" fill="#e3d0cb" stroke="#ddd"/>
+<text class="celltext" x="544" y="465">0.152</text>
+<rect x="630" y="448" width="104" height="22" fill="#e3d1cc" stroke="#ddd"/>
+<text class="celltext" x="654" y="465">0.148</text>
+<rect x="740" y="448" width="104" height="22" fill="#e3d1cc" stroke="#ddd"/>
+<text class="celltext" x="764" y="465">0.147</text>
+<rect x="850" y="448" width="104" height="22" fill="#e6d5d1" stroke="#ddd"/>
+<text class="celltext" x="874" y="465">0.133</text>
+<rect x="960" y="448" width="104" height="22" fill="#e6d5d1" stroke="#ddd"/>
+<text class="celltext" x="984" y="465">0.133</text>
+<text class="label" x="510" y="491" text-anchor="end">O-sialoglycoprotein endopeptidase</text>
+<rect x="520" y="474" width="104" height="22" fill="#e4d3ce" stroke="#ddd"/>
+<text class="celltext" x="544" y="491">0.142</text>
+<rect x="630" y="474" width="104" height="22" fill="#eadbd7" stroke="#ddd"/>
+<text class="celltext" x="654" y="491">0.114</text>
+<rect x="740" y="474" width="104" height="22" fill="#eaddd9" stroke="#ddd"/>
+<text class="celltext" x="764" y="491">0.110</text>
+<rect x="850" y="474" width="104" height="22" fill="#eaddd9" stroke="#ddd"/>
+<text class="celltext" x="874" y="491">0.110</text>
+<rect x="960" y="474" width="104" height="22" fill="#ebddd9" stroke="#ddd"/>
+<text class="celltext" x="984" y="491">0.109</text>
+<text class="label" x="510" y="517" text-anchor="end">adenylosuccinate lyase</text>
+<rect x="520" y="500" width="104" height="22" fill="#e5d4d0" stroke="#ddd"/>
+<text class="celltext" x="544" y="517">0.138</text>
+<rect x="630" y="500" width="104" height="22" fill="#e9dad7" stroke="#ddd"/>
+<text class="celltext" x="654" y="517">0.117</text>
+<rect x="740" y="500" width="104" height="22" fill="#ebdeda" stroke="#ddd"/>
+<text class="celltext" x="764" y="517">0.106</text>
+<rect x="850" y="500" width="104" height="22" fill="#ebdedb" stroke="#ddd"/>
+<text class="celltext" x="874" y="517">0.104</text>
+<rect x="960" y="500" width="104" height="22" fill="#ebdedb" stroke="#ddd"/>
+<text class="celltext" x="984" y="517">0.104</text>
+<text class="label" x="510" y="543" text-anchor="end">cytochrome P450, family 51, subfamily A, polypeptide 1</text>
+<rect x="520" y="526" width="104" height="22" fill="#e6d6d2" stroke="#ddd"/>
+<text class="celltext" x="544" y="543">0.131</text>
+<rect x="630" y="526" width="104" height="22" fill="#e6d6d2" stroke="#ddd"/>
+<text class="celltext" x="654" y="543">0.131</text>
+<rect x="740" y="526" width="104" height="22" fill="#e6d6d2" stroke="#ddd"/>
+<text class="celltext" x="764" y="543">0.131</text>
+<rect x="850" y="526" width="104" height="22" fill="#ece0dc" stroke="#ddd"/>
+<text class="celltext" x="874" y="543">0.100</text>
+<rect x="960" y="526" width="104" height="22" fill="#ede1de" stroke="#ddd"/>
+<text class="celltext" x="984" y="543">0.095</text>
+<text class="label" x="510" y="569" text-anchor="end">glutaminyl-tRNA synthetase</text>
+<rect x="520" y="552" width="104" height="22" fill="#e7d7d3" stroke="#ddd"/>
+<text class="celltext" x="544" y="569">0.128</text>
+<rect x="630" y="552" width="104" height="22" fill="#e8d8d4" stroke="#ddd"/>
+<text class="celltext" x="654" y="569">0.125</text>
+<rect x="740" y="552" width="104" height="22" fill="#e8d8d4" stroke="#ddd"/>
+<text class="celltext" x="764" y="569">0.125</text>
+<rect x="850" y="552" width="104" height="22" fill="#e9dbd7" stroke="#ddd"/>
+<text class="celltext" x="874" y="569">0.117</text>
+<rect x="960" y="552" width="104" height="22" fill="#e9dbd7" stroke="#ddd"/>
+<text class="celltext" x="984" y="569">0.115</text>
+<text class="label" x="510" y="595" text-anchor="end">superkiller viralicidic activity 2-like 2 (S. cerevisiae)</text>
+<rect x="520" y="578" width="104" height="22" fill="#e8d8d4" stroke="#ddd"/>
+<text class="celltext" x="544" y="595">0.124</text>
+<rect x="630" y="578" width="104" height="22" fill="#e8d8d4" stroke="#ddd"/>
+<text class="celltext" x="654" y="595">0.124</text>
+<rect x="740" y="578" width="104" height="22" fill="#f5f5f5" stroke="#ddd"/>
+<rect x="850" y="578" width="104" height="22" fill="#f5f5f5" stroke="#ddd"/>
+<rect x="960" y="578" width="104" height="22" fill="#f5f5f5" stroke="#ddd"/>
+<text class="label" x="510" y="621" text-anchor="end">seryl-tRNA synthetase</text>
+<rect x="520" y="604" width="104" height="22" fill="#eaddd9" stroke="#ddd"/>
+<text class="celltext" x="544" y="621">0.110</text>
+<rect x="630" y="604" width="104" height="22" fill="#ecdfdb" stroke="#ddd"/>
+<text class="celltext" x="654" y="621">0.103</text>
+<rect x="740" y="604" width="104" height="22" fill="#ece0dd" stroke="#ddd"/>
+<text class="celltext" x="764" y="621">0.099</text>
+<rect x="850" y="604" width="104" height="22" fill="#ece0dd" stroke="#ddd"/>
+<text class="celltext" x="874" y="621">0.099</text>
+<rect x="960" y="604" width="104" height="22" fill="#efe5e2" stroke="#ddd"/>
+<text class="celltext" x="984" y="621">0.084</text>
+<text class="label" x="510" y="647" text-anchor="end">leucyl-tRNA synthetase</text>
+<rect x="520" y="630" width="104" height="22" fill="#ebddda" stroke="#ddd"/>
+<text class="celltext" x="544" y="647">0.108</text>
+<rect x="630" y="630" width="104" height="22" fill="#ecdfdc" stroke="#ddd"/>
+<text class="celltext" x="654" y="647">0.102</text>
+<rect x="740" y="630" width="104" height="22" fill="#efe4e2" stroke="#ddd"/>
+<text class="celltext" x="764" y="647">0.085</text>
+<rect x="850" y="630" width="104" height="22" fill="#efe5e2" stroke="#ddd"/>
+<text class="celltext" x="874" y="647">0.083</text>
+<rect x="960" y="630" width="104" height="22" fill="#efe5e2" stroke="#ddd"/>
+<text class="celltext" x="984" y="647">0.082</text>
+<text class="label" x="510" y="673" text-anchor="end">peptidylprolyl cis/trans isomerase, NIMA-interacting 1</text>
+<rect x="520" y="656" width="104" height="22" fill="#ecdfdb" stroke="#ddd"/>
+<text class="celltext" x="544" y="673">0.103</text>
+<rect x="630" y="656" width="104" height="22" fill="#eee3e0" stroke="#ddd"/>
+<text class="celltext" x="654" y="673">0.090</text>
+<rect x="740" y="656" width="104" height="22" fill="#f2e9e7" stroke="#ddd"/>
+<text class="celltext" x="764" y="673">0.070</text>
+<rect x="850" y="656" width="104" height="22" fill="#f5f5f5" stroke="#ddd"/>
+<rect x="960" y="656" width="104" height="22" fill="#f5f5f5" stroke="#ddd"/>
+<text class="label" x="510" y="699" text-anchor="end">tRNA nucleotidyl transferase, CCA-adding, 1</text>
+<rect x="520" y="682" width="104" height="22" fill="#ece0dd" stroke="#ddd"/>
+<text class="celltext" x="544" y="699">0.099</text>
+<rect x="630" y="682" width="104" height="22" fill="#ede2df" stroke="#ddd"/>
+<text class="celltext" x="654" y="699">0.093</text>
+<rect x="740" y="682" width="104" height="22" fill="#eee3e0" stroke="#ddd"/>
+<text class="celltext" x="764" y="699">0.090</text>
+<rect x="850" y="682" width="104" height="22" fill="#efe4e1" stroke="#ddd"/>
+<text class="celltext" x="874" y="699">0.085</text>
+<rect x="960" y="682" width="104" height="22" fill="#efe5e2" stroke="#ddd"/>
+<text class="celltext" x="984" y="699">0.084</text>
+<text class="label" x="510" y="725" text-anchor="end">glutamate-ammonia ligase</text>
+<rect x="520" y="708" width="104" height="22" fill="#ede1de" stroke="#ddd"/>
+<text class="celltext" x="544" y="725">0.095</text>
+<rect x="630" y="708" width="104" height="22" fill="#efe4e1" stroke="#ddd"/>
+<text class="celltext" x="654" y="725">0.087</text>
+<rect x="740" y="708" width="104" height="22" fill="#efe4e1" stroke="#ddd"/>
+<text class="celltext" x="764" y="725">0.085</text>
+<rect x="850" y="708" width="104" height="22" fill="#f0e7e4" stroke="#ddd"/>
+<text class="celltext" x="874" y="725">0.077</text>
+<rect x="960" y="708" width="104" height="22" fill="#f0e7e4" stroke="#ddd"/>
+<text class="celltext" x="984" y="725">0.077</text>
+<text class="label" x="510" y="751" text-anchor="end">Thymidylate synthase</text>
+<rect x="520" y="734" width="104" height="22" fill="#eee3e0" stroke="#ddd"/>
+<text class="celltext" x="544" y="751">0.088</text>
+<rect x="630" y="734" width="104" height="22" fill="#eee3e0" stroke="#ddd"/>
+<text class="celltext" x="654" y="751">0.088</text>
+<rect x="740" y="734" width="104" height="22" fill="#efe4e1" stroke="#ddd"/>
+<text class="celltext" x="764" y="751">0.086</text>
+<rect x="850" y="734" width="104" height="22" fill="#efe4e1" stroke="#ddd"/>
+<text class="celltext" x="874" y="751">0.086</text>
+<rect x="960" y="734" width="104" height="22" fill="#efe5e2" stroke="#ddd"/>
+<text class="celltext" x="984" y="751">0.083</text>
+<text class="label" x="510" y="777" text-anchor="end">hydroxymethylbilane synthase</text>
+<rect x="520" y="760" width="104" height="22" fill="#efe4e2" stroke="#ddd"/>
+<text class="celltext" x="544" y="777">0.085</text>
+<rect x="630" y="760" width="104" height="22" fill="#efe5e2" stroke="#ddd"/>
+<text class="celltext" x="654" y="777">0.084</text>
+<rect x="740" y="760" width="104" height="22" fill="#f0e5e3" stroke="#ddd"/>
+<text class="celltext" x="764" y="777">0.081</text>
+<rect x="850" y="760" width="104" height="22" fill="#f3ebe9" stroke="#ddd"/>
+<text class="celltext" x="874" y="777">0.062</text>
+<rect x="960" y="760" width="104" height="22" fill="#f4ecea" stroke="#ddd"/>
+<text class="celltext" x="984" y="777">0.059</text>
+<text class="label" x="510" y="803" text-anchor="end">mevalonate kinase</text>
+<rect x="520" y="786" width="104" height="22" fill="#f0e6e3" stroke="#ddd"/>
+<text class="celltext" x="544" y="803">0.081</text>
+<rect x="630" y="786" width="104" height="22" fill="#f0e6e3" stroke="#ddd"/>
+<text class="celltext" x="654" y="803">0.081</text>
+<rect x="740" y="786" width="104" height="22" fill="#f0e6e3" stroke="#ddd"/>
+<text class="celltext" x="764" y="803">0.081</text>
+<rect x="850" y="786" width="104" height="22" fill="#f1e8e6" stroke="#ddd"/>
+<text class="celltext" x="874" y="803">0.073</text>
+<rect x="960" y="786" width="104" height="22" fill="#f1e8e6" stroke="#ddd"/>
+<text class="celltext" x="984" y="803">0.073</text>
+<text class="label" x="510" y="829" text-anchor="end">mevalonate (diphospho) decarboxylase</text>
+<rect x="520" y="812" width="104" height="22" fill="#f0e7e4" stroke="#ddd"/>
+<text class="celltext" x="544" y="829">0.077</text>
+<rect x="630" y="812" width="104" height="22" fill="#f5efee" stroke="#ddd"/>
+<text class="celltext" x="654" y="829">0.050</text>
+<rect x="740" y="812" width="104" height="22" fill="#f6f0ee" stroke="#ddd"/>
+<text class="celltext" x="764" y="829">0.047</text>
+<rect x="850" y="812" width="104" height="22" fill="#f7f2f0" stroke="#ddd"/>
+<text class="celltext" x="874" y="829">0.041</text>
+<rect x="960" y="812" width="104" height="22" fill="#f7f2f1" stroke="#ddd"/>
+<text class="celltext" x="984" y="829">0.040</text>
+</svg>

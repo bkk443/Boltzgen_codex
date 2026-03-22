@@ -1,0 +1,21 @@
+name: snacdb_antigen_compare
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - openpyxl
+  - requests
+  - biopython>=1.85
+  - scipy
+  - tqdm
+  - networkx
+  - foldseek
+  - hmmer
+  - mmseqs2
+  - numpy
+  - pip:
+      - git+https://github.com/oxpig/ANARCI.git
