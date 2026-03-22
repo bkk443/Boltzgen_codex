@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<style>
+text { font-family: Arial, sans-serif; }
+.title { font-size: 24px; font-weight: bold; }
+.subtitle { font-size: 14px; fill: #444; }
+.query { fill: #d62728; }
+.hit { fill: #1f77b4; opacity: 0.7; }
+.query-label { font-size: 11px; fill: #111; }
+.hit-label { font-size: 10px; fill: #1f3b73; }
+</style>
+<text class="title" x="80" y="40">PCA-style embedding of query targets and top-5 SNAC-DB hits</text>
+<text class="subtitle" x="80" y="65">Built from the top-5 Foldseek TM-score relationship matrix exported for PR review.</text>
+<rect x="80" y="80" width="1240" height="840" fill="white" stroke="#ccc"/>
+<circle class="query" cx="317.1" cy="849.5" r="5"/>
+<text class="query-label" x="324.1" y="842.5">GTP cyclohydrolase 1</text>
+<circle class="query" cx="1300.0" cy="168.1" r="5"/>
+<text class="query-label" x="1307.0" y="161.1">MTOR associated protein, LST8 homolog (S. cerevisiae)</text>
+<circle class="query" cx="317.1" cy="848.6" r="5"/>
+<text class="query-label" x="324.1" y="841.6">NUF2, NDC80 kinetochore complex component</text>
+<circle class="query" cx="317.1" cy="846.8" r="5"/>
+<text class="query-label" x="324.1" y="839.8">O-sialoglycoprotein endopeptidase</text>
+<circle class="query" cx="317.1" cy="864.4" r="5"/>
+<text class="query-label" x="324.1" y="857.4">Ran GTPase activating protein 1</text>
+<circle class="query" cx="317.1" cy="846.7" r="5"/>
+<text class="query-label" x="324.1" y="839.7">Thymidylate synthase</text>
+<circle class="query" cx="317.1" cy="850.6" r="5"/>
+<text class="query-label" x="324.1" y="843.6">UDP-glucose pyrophosphorylase 2</text>
+<circle class="query" cx="317.1" cy="846.9" r="5"/>
+<text class="query-label" x="324.1" y="839.9">adenylosuccinate lyase</text>
+<circle class="query" cx="317.1" cy="900.0" r="5"/>
+<text class="query-label" x="324.1" y="893.0">aminolevulinate dehydratase</text>
+<circle class="query" cx="317.1" cy="892.7" r="5"/>
+<text class="query-label" x="324.1" y="885.7">cell division cycle 42</text>
+<circle class="query" cx="317.1" cy="847.0" r="5"/>
+<text class="query-label" x="324.1" y="840.0">cytochrome P450, family 51, subfamily A, polypeptide 1</text>
+<circle class="query" cx="317.1" cy="847.8" r="5"/>
+<text class="query-label" x="324.1" y="840.8">deoxyuridine triphosphatase</text>
+<circle class="query" cx="317.1" cy="846.2" r="5"/>
+<text class="query-label" x="324.1" y="839.2">glutamate-ammonia ligase</text>
+<circle class="query" cx="317.1" cy="846.9" r="5"/>
+<text class="query-label" x="324.1" y="839.9">glutaminyl-tRNA synthetase</text>
+<circle class="query" cx="317.1" cy="846.1" r="5"/>
+<text class="query-label" x="324.1" y="839.1">hydroxymethylbilane synthase</text>
+<circle class="query" cx="317.1" cy="846.3" r="5"/>
+<text class="query-label" x="324.1" y="839.3">leucyl-tRNA synthetase</text>
+<circle class="query" cx="317.1" cy="857.9" r="5"/>
+<text class="query-label" x="324.1" y="850.9">lysyl-tRNA synthetase</text>
+<circle class="query" cx="317.1" cy="845.8" r="5"/>
+<text class="query-label" x="324.1" y="838.8">mevalonate (diphospho) decarboxylase</text>
+<circle class="query" cx="317.1" cy="846.1" r="5"/>
+<text class="query-label" x="324.1" y="839.1">mevalonate kinase</text>
+<circle class="query" cx="317.1" cy="846.0" r="5"/>
+<text class="query-label" x="324.1" y="839.0">peptidylprolyl cis/trans isomerase, NIMA-interacting 1</text>
+<circle class="query" cx="317.1" cy="867.0" r="5"/>
+<text class="query-label" x="324.1" y="860.0">phosphopantothenoylcysteine synthetase</text>
+<circle class="query" cx="317.1" cy="849.5" r="5"/>
+<text class="query-label" x="324.1" y="842.5">protein phosphatase 1, regulatory subunit 7</text>
+<circle class="query" cx="317.1" cy="861.5" r="5"/>
+<text class="query-label" x="324.1" y="854.5">ring-box 1, E3 ubiquitin protein ligase</text>
+<circle class="query" cx="317.1" cy="846.4" r="5"/>
+<text class="query-label" x="324.1" y="839.4">seryl-tRNA synthetase</text>
+<circle class="query" cx="317.1" cy="851.7" r="5"/>
+<text class="query-label" x="324.1" y="844.7">superkiller viralicidic activity 2-like 2 (S. cerevisiae)</text>
+<circle class="query" cx="317.1" cy="846.3" r="5"/>
+<text class="query-label" x="324.1" y="839.3">tRNA nucleotidyl transferase, CCA-adding, 1</text>
+<circle class="query" cx="317.1" cy="865.0" r="5"/>
+<text class="query-label" x="324.1" y="858.0">thiamin pyrophosphokinase 1</text>
+<circle class="query" cx="317.1" cy="880.1" r="5"/>
+<text class="query-label" x="324.1" y="873.1">triosephosphate isomerase 1</text>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="845.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="845.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.0" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="849.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.0" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="857.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="857.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="856.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="857.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="856.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="856.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="850.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="851.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="850.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="845.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.5" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.0" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="897.2" r="3.5"/>
+<text class="hit-label" x="322.1" y="907.2">6SGE-ASU0-VHH_B-Ag_A_C</text>
+<circle class="hit" cx="317.1" cy="897.2" r="3.5"/>
+<text class="hit-label" x="322.1" y="907.2">6SGE-ASU0-VHH_D-Ag_A_C</text>
+<circle class="hit" cx="317.1" cy="848.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.0" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.0" r="3.5"/>
+<circle class="hit" cx="317.1" cy="845.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="129.3" cy="200.6" r="3.5"/>
+<text class="hit-label" x="134.3" y="210.6">7EO4-ASU0-VH_E-VL_E-Ag_B_C</text>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="854.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.6" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.0" r="3.5"/>
+<circle class="hit" cx="317.1" cy="853.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="845.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="845.8" r="3.5"/>
+<circle class="hit" cx="116.8" cy="157.8" r="3.5"/>
+<text class="hit-label" x="121.8" y="167.8">7WU9-ASU0-VH_S-VL_S-Ag_A_B</text>
+<circle class="hit" cx="317.1" cy="861.3" r="3.5"/>
+<text class="hit-label" x="322.1" y="871.3">8CAF-ASU0-VH_B-VL_A-Ag_F_H</text>
+<circle class="hit" cx="317.1" cy="874.1" r="3.5"/>
+<text class="hit-label" x="322.1" y="884.1">8CAF-ASU0-VH_D-VL_C-Ag_E_G</text>
+<circle class="hit" cx="317.1" cy="846.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="128.8" cy="199.0" r="3.5"/>
+<text class="hit-label" x="133.8" y="209.0">8G2Y-ASU0-VHH_N-Ag_A_B</text>
+<circle class="hit" cx="317.1" cy="850.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="850.5" r="3.5"/>
+<circle class="hit" cx="127.4" cy="194.2" r="3.5"/>
+<text class="hit-label" x="132.4" y="204.2">8I7W-ASU0-VH_E-VL_E-Ag_B_C</text>
+<circle class="hit" cx="317.1" cy="846.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="863.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="899.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="899.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="883.1" r="3.5"/>
+<text class="hit-label" x="322.1" y="893.1">8RTF-ASU2-VHH_G-Ag_A_F</text>
+<circle class="hit" cx="317.1" cy="883.1" r="3.5"/>
+<text class="hit-label" x="322.1" y="893.1">8RTF-ASU2-VHH_K-Ag_C_E</text>
+<circle class="hit" cx="317.1" cy="897.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="863.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="856.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="856.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="848.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.5" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.2" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.4" r="3.5"/>
+<circle class="hit" cx="100.0" cy="100.0" r="3.5"/>
+<text class="hit-label" x="105.0" y="110.0">8ZBI-ASU0-VH_F-VL_F-Ag_B_C</text>
+<circle class="hit" cx="317.1" cy="847.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.4" r="3.5"/>
+<circle class="hit" cx="317.1" cy="847.7" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.8" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.3" r="3.5"/>
+<circle class="hit" cx="317.1" cy="875.0" r="3.5"/>
+<text class="hit-label" x="322.1" y="885.0">9I5E-ASU0-VHH_N-Ag_A_B</text>
+<circle class="hit" cx="317.1" cy="847.1" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.9" r="3.5"/>
+<circle class="hit" cx="317.1" cy="851.5" r="3.5"/>
+<circle class="hit" cx="317.1" cy="846.2" r="3.5"/>
+<circle class="query" cx="1080" cy="110" r="5"/>
+<text x="1092" y="114">Workbook query targets</text>
+<circle class="hit" cx="1080" cy="134" r="4"/>
+<text x="1092" y="138">SNAC-DB hit structures (top 5 per query)</text>
+</svg>
