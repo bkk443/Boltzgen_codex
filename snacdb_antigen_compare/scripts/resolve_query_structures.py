@@ -7,12 +7,6 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-
-
-def is_valid_pdb_code(value):
-    value = (value or '').strip()
-    return len(value) == 4 and value[0].isdigit() and any(ch.isalpha() for ch in value[1:]) and value.isalnum()
-
 QUERY_HEADERS = [
     'target_name','normalized_target_symbol','chosen_structure_id','source_database','structure_class',
     'chain','coverage_notes','selection_rationale','query_filename','status','failure_reason'
@@ -31,7 +25,7 @@ def http_json(url, method='GET', payload=None):
 
 
 def pdb_candidates(text):
-    return list(dict.fromkeys(code.upper() for code in re.findall(r'\b[0-9][A-Za-z0-9]{3}\b', text or '', flags=re.I) if is_valid_pdb_code(code.upper())))
+    return list(dict.fromkeys(code.upper() for code in re.findall(r'\b[0-9][A-Za-z0-9]{3}\b', text or '', flags=re.I)))
 
 
 def rcsb_entry(entry_id):

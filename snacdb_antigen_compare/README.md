@@ -12,13 +12,12 @@ This directory contains a rerunnable workflow for comparing user antigen target 
 6. Run SNAC-DB structural hit finding in antigen mode.
 7. Postprocess raw outputs into user-friendly CSV summaries and a Markdown report.
 
-## Important assumptions
+## Important assumptions and current agent-run caveats
 
-- By default, `run_all.sh` looks for `./INPUT_ANTIGENS.xlsx` at the repository root, but you should usually pass the workbook path explicitly.
-- Local input workbooks are intentionally not committed to git; provide the `.xlsx` file locally when you run the workflow.
+- The workflow expects the workbook at `./INPUT_ANTIGENS.xlsx` relative to the repository root.
+- During this agent run, that workbook file was **not present** in `/workspace/Boltzgen_codex`, so the generated manifests intentionally record the missing-input condition instead of fabricating antigen mappings.
 - The SNAC-DB curated dataset archive advertised by the upstream repository is currently ~11 GB on Zenodo. The helper script records exact provenance and can download it when explicitly invoked with `--download`, but the agent did not pull the full archive automatically.
 - AlphaFold is only used as a labeled fallback when no experimental structure can be resolved automatically from the manifest row.
-- Most files under `01_manifest/`, `02_queries/`, `03_raw_results/`, `04_results/`, `05_report/`, `logs/`, and `reference/` are generated at runtime and are intentionally ignored by git.
 
 ## Required software
 
@@ -36,16 +35,8 @@ conda activate snacdb_antigen_compare
 
 ## Rerun the full workflow
 
-Default workbook location:
-
 ```bash
 bash snacdb_antigen_compare/scripts/run_all.sh
-```
-
-Override the workbook path explicitly if the file is stored under a different name/location:
-
-```bash
-bash snacdb_antigen_compare/scripts/run_all.sh /absolute/or/relative/path/to/workbook.xlsx
 ```
 
 ## Optional: download the curated SNAC-DB reference archive
@@ -57,24 +48,23 @@ python snacdb_antigen_compare/scripts/download_snacdb_reference.py \
   --download
 ```
 
-After download, extract the archive under `snacdb_antigen_compare/reference/snacdb_curated/` so that the merged curated-complex directory is available at `snacdb_antigen_compare/reference/snacdb_curated/all_complexes`.
+After download, extract the archive under `snacdb_antigen_compare/reference/snacdb_curated/` so that `run_antigen_hits.sh` can point SNAC-DB at the curated structure directory.
 
 ## Optional: run the SNAC-DB hit-finding step directly
 
 ```bash
 bash snacdb_antigen_compare/scripts/run_antigen_hits.sh \
-  snacdb_antigen_compare/reference/snacdb_curated/all_complexes \
+  snacdb_antigen_compare/reference/snacdb_curated \
   snacdb_antigen_compare/02_queries/structures
 ```
 
 ## Output layout
 
-- `01_manifest/`: generated workbook schema summary plus normalized/unresolved manifests
-- `02_queries/`: generated structure manifest and downloaded query structures
+- `01_manifest/`: workbook schema summary plus normalized/unresolved manifests
+- `02_queries/`: selected structure manifest and downloaded query structures
 - `03_raw_results/`: copied raw SNAC-DB/Foldseek outputs
-- `04_results/`: generated all hits, best hits, top-5 hits, unresolved/failed targets
-- `05_report/summary.md`: generated short interpretation report
-- `pr_results/`: optional committed text snapshots of result files for PR review
+- `04_results/`: all hits, best hits, top-5 hits, unresolved/failed targets
+- `05_report/summary.md`: short interpretation report
 - `env/environment.yml`: reproducible environment spec
 - `logs/`: terminal-style logs for each workflow stage
 - `scripts/`: all custom workflow code
@@ -88,19 +78,9 @@ The structure-selection step is intentionally conservative:
 3. Use AlphaFold only as a clearly labeled fallback.
 4. Leave ambiguous rows unresolved rather than force matching names to structures.
 
-The workbook parser now infers likely columns from both headers and sample values, so unlabeled or weakly labeled UniProt-accession columns (for example a second column populated with UniProt codes) are detected without relying on the header text alone.
-
 ## Notes on SNAC-DB integration
 
 - Upstream SNAC-DB repo: `external/SNAC-DB` after setup.
-- The workflow prepares antigen-chain reference inputs with upstream SNAC-DB utilities and then runs Foldseek multimer search against the prepared antigen-chain directory.
+- Upstream `finding_hits.sh` is used in `antigen` mode.
 - The environment spec includes Foldseek, HMMER, MMseqs2, and the Python dependencies SNAC-DB documents.
 - ANARCI is installed from GitHub and patched with `snacdb-patch-anarci` per upstream instructions.
-
-## PR-visible result snapshots
-
-If you want text results to appear directly in a pull request, export the latest generated outputs into `pr_results/`:
-
-```bash
-python snacdb_antigen_compare/scripts/export_pr_results.py snacdb_antigen_compare
-```

@@ -1,0 +1,2 @@
+source_sheet,source_row,target_name,target_symbol,protein_name,gene_symbol,uniprot_accession,pdb_id_hint,organism,aliases,notes,structure_hint,status,unresolved_reason
+,,,,,,,,,,Missing workbook: /workspace/Boltzgen_codex/INPUT_ANTIGENS.xlsx,,unresolved,input_workbook_not_found
