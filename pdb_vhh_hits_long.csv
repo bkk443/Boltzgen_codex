@@ -1,4 +1,5 @@
 target,pdb_id,used_mode
+MNAT1,8PYR,gene_attr_human
 VCP,8A67,basic
 VCP,7NBB,basic
 SARS,6WAQ,basic
@@ -211,6 +212,8 @@ PIN1,7Y9T,gene_attr
 PIN1,7Y9U,gene_attr
 PIN1,7Y9V,gene_attr
 PIN1,8JH5,gene_attr
+NUF2,5TD8,gene_attr
+CCNH,8PYR,gene_attr_human
 SEC13,6X08,basic
 CDC42,5G5X,basic
 CDC42,9J3L,basic
