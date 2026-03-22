@@ -1,0 +1,3 @@
+target,reason,notes
+,input_workbook_not_found,Missing workbook: /workspace/Boltzgen_codex/INPUT_ANTIGENS.xlsx
+,snacdb_raw_report_missing,Expected raw report at /workspace/Boltzgen_codex/snacdb_antigen_compare/03_raw_results/foldseek_report.tsv

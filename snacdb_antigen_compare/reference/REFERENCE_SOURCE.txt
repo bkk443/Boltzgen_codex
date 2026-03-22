@@ -1,0 +1,9 @@
+Access date (UTC): 2026-03-19T12:33:54.887855+00:00
+Concept DOI: 10.5281/zenodo.15870002
+Versioned DOI: 10.5281/zenodo.18378437
+Title: SNAC-DB: Structural NANOBODY® (VHH) and Antibody (VH-VL) Complex Database
+Publication date: 2026-01-26
+Expected archive: SNAC-DataBase.zip
+Expected size (bytes): 11068449854
+Download URL: https://zenodo.org/api/records/18378437/files/SNAC-DataBase.zip/content
+Note: the archive is large; this helper records exact provenance and can download it when invoked with --download.
