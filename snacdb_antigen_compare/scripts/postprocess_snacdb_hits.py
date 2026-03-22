@@ -51,7 +51,7 @@ def parse_report(report_path, query_lookup):
 def write_csv(path, headers, rows):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open('w', newline='') as fh:
-        writer = csv.DictWriter(fh, fieldnames=headers, extrasaction='ignore')
+        writer = csv.DictWriter(fh, fieldnames=headers)
         writer.writeheader()
         writer.writerows(rows)
 

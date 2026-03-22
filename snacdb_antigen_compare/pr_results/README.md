@@ -8,9 +8,6 @@ This directory intentionally contains a committed text snapshot of the latest ge
 - `snacdb_antigen_top5_hits_pr_snapshot.csv`: top 5 SNAC-DB neighbors per target.
 - `unresolved_or_failed_targets_pr_snapshot.csv`: unresolved or failed targets at postprocessing time.
 - `runtime_summary_pr_snapshot.md`: copy of the generated Markdown summary.
-- `best_hit_tm_scores.svg`: ranked bar chart of best-hit TM-scores.
-- `top5_tm_heatmap.svg`: heatmap of TM-scores for ranks 1–5 per target.
-- `top5_tm_heatmap_matrix.csv`: numeric matrix behind the heatmap.
 
 ## Snapshot summary
 

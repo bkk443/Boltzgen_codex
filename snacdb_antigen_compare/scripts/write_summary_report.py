@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import csv
-import sys
 from pathlib import Path
 
 
@@ -19,8 +18,7 @@ def load_rows(path):
 
 
 def main():
-    out_root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('snacdb_antigen_compare')
-    input_workbook = sys.argv[2] if len(sys.argv) > 2 else './INPUT_ANTIGENS.xlsx'
+    out_root = Path('snacdb_antigen_compare')
     report = out_root / '05_report/summary.md'
     report.parent.mkdir(parents=True, exist_ok=True)
     query_rows = load_rows(out_root / '02_queries/query_structure_manifest.csv')
@@ -38,7 +36,7 @@ def main():
         '',
         '## Data sources used',
         '',
-        f'- Query workbook path used for this run: `{input_workbook}`.',
+        '- Query workbook expected at `./INPUT_ANTIGENS.xlsx`.',
         '- SNAC-DB curated dataset provenance recorded in `reference/REFERENCE_SOURCE.txt`.',
         '',
         '## Structure selection policy',
