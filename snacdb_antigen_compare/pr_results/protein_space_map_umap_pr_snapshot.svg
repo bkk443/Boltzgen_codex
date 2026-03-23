@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<style>
+text { font-family: Arial, sans-serif; }
+.title { font-size: 24px; font-weight: bold; }
+.subtitle { font-size: 14px; fill: #444; }
+.ref { fill: #9aa0a6; opacity: 0.45; }
+.query { fill: #d62728; }
+.query-label { font-size: 11px; fill: #111; }
+.frame { fill: white; stroke: #ccc; }
+</style>
+<text class="title" x="85" y="38">Structure map (UMAP) across workbook proteins and SNAC-DB reference antigens</text>
+<text class="subtitle" x="85" y="62">2D UMAP from the same all-vs-all structural similarity matrix.</text>
+<rect class="frame" x="85" y="85" width="1230" height="830" />
+<circle class="query" cx="543.9" cy="832.3" r="6.5" />
+<text class="query-label" x="551.9" y="825.3">1A4R</text>
+<circle class="query" cx="243.0" cy="874.5" r="6.5" />
+<text class="query-label" x="251.0" y="867.5">1E51</text>
+<circle class="query" cx="780.9" cy="411.7" r="6.5" />
+<text class="query-label" x="788.9" y="404.7">1F8A</text>
+<circle class="query" cx="940.6" cy="387.3" r="6.5" />
+<text class="query-label" x="948.6" y="380.3">1FB1</text>
+<circle class="query" cx="103.0" cy="853.7" r="6.5" />
+<text class="query-label" x="111.0" y="846.7">1HTI</text>
+<circle class="query" cx="1025.9" cy="347.2" r="6.5" />
+<text class="query-label" x="1033.9" y="340.2">1HVY</text>
+<circle class="query" cx="776.4" cy="481.8" r="6.5" />
+<text class="query-label" x="784.4" y="474.8">1LDJ</text>
+<circle class="query" cx="778.8" cy="564.0" r="6.5" />
+<text class="query-label" x="786.8" y="557.0">1OU5</text>
+<circle class="query" cx="432.5" cy="847.0" r="6.5" />
+<text class="query-label" x="440.5" y="840.0">1P9O</text>
+<circle class="query" cx="929.1" cy="515.8" r="6.5" />
+<text class="query-label" x="937.1" y="508.8">1Q5H</text>
+<circle class="query" cx="796.6" cy="521.3" r="6.5" />
+<text class="query-label" x="804.6" y="514.3">1Z5S</text>
+<circle class="query" cx="975.9" cy="252.4" r="6.5" />
+<text class="query-label" x="983.9" y="245.4">2J91</text>
+<circle class="query" cx="872.6" cy="478.2" r="6.5" />
+<text class="query-label" x="880.6" y="471.2">2OJW</text>
+<circle class="query" cx="747.9" cy="363.9" r="6.5" />
+<text class="query-label" x="755.9" y="356.9">2R3V</text>
+<circle class="query" cx="860.4" cy="246.4" r="6.5" />
+<text class="query-label" x="868.4" y="239.4">2VE7</text>
+<circle class="query" cx="735.8" cy="495.7" r="6.5" />
+<text class="query-label" x="743.8" y="488.7">2WFD</text>
+<circle class="query" cx="563.1" cy="404.5" r="6.5" />
+<text class="query-label" x="571.1" y="397.5">3BJU</text>
+<circle class="query" cx="716.4" cy="382.1" r="6.5" />
+<text class="query-label" x="724.4" y="375.1">3D4J</text>
+<circle class="query" cx="707.2" cy="408.0" r="6.5" />
+<text class="query-label" x="715.2" y="401.0">3ECR</text>
+<circle class="query" cx="806.2" cy="238.5" r="6.5" />
+<text class="query-label" x="814.2" y="231.5">3JUS</text>
+<circle class="query" cx="695.7" cy="499.3" r="6.5" />
+<text class="query-label" x="703.7" y="492.3">3R2W</text>
+<circle class="query" cx="286.4" cy="817.0" r="6.5" />
+<text class="query-label" x="294.4" y="810.0">3S4Y</text>
+<circle class="query" cx="768.2" cy="209.0" r="6.5" />
+<text class="query-label" x="776.2" y="202.0">3VBB</text>
+<circle class="query" cx="741.4" cy="802.3" r="6.5" />
+<text class="query-label" x="749.4" y="795.3">4JSN</text>
+<circle class="query" cx="840.5" cy="348.8" r="6.5" />
+<text class="query-label" x="848.5" y="341.8">4R3Z</text>
+<circle class="query" cx="866.7" cy="402.0" r="6.5" />
+<text class="query-label" x="874.7" y="395.0">6C90</text>
+<circle class="query" cx="754.2" cy="433.4" r="6.5" />
+<text class="query-label" x="762.2" y="426.4">6GWJ</text>
+<circle class="query" cx="350.2" cy="657.8" r="6.5" />
+<text class="query-label" x="358.2" y="650.8">6HKW</text>
+<circle class="ref" cx="1136.1" cy="538.4" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1098.2" cy="524.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1020.3" cy="541.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="959.9" cy="571.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1162.6" cy="551.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="983.0" cy="468.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="299.7" cy="656.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1131.4" cy="533.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="516.1" cy="432.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="541.4" cy="427.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1218.2" cy="534.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="939.1" cy="559.4" r="3.2" opacity="0.55" />
+<circle class="ref" cx="514.4" cy="412.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="490.4" cy="446.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="713.8" cy="172.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="706.3" cy="183.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="275.5" cy="678.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="291.6" cy="676.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="988.2" cy="580.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="586.4" cy="466.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="571.2" cy="477.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="497.1" cy="825.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="472.0" cy="836.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="333.9" cy="776.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="361.5" cy="803.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1111.3" cy="481.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="622.2" cy="784.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="608.3" cy="758.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="819.5" cy="182.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="792.8" cy="374.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="997.9" cy="218.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1016.2" cy="396.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1122.3" cy="455.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1096.5" cy="413.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1072.4" cy="431.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="857.6" cy="470.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1190.8" cy="535.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1167.0" cy="499.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="545.1" cy="805.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="511.9" cy="784.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="705.8" cy="573.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="695.4" cy="557.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="969.4" cy="539.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1028.9" cy="428.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1063.7" cy="389.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="832.4" cy="321.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="615.0" cy="817.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="720.6" cy="821.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="556.6" cy="351.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="569.6" cy="356.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="593.1" cy="358.4" r="3.2" opacity="0.55" />
+<circle class="ref" cx="583.4" cy="336.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="703.1" cy="806.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1178.9" cy="492.4" r="3.2" opacity="0.55" />
+<circle class="ref" cx="889.2" cy="135.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="927.5" cy="140.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1277.0" cy="596.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1275.5" cy="541.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="742.6" cy="306.4" r="3.2" opacity="0.55" />
+<circle class="ref" cx="888.2" cy="164.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1178.1" cy="395.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="899.4" cy="309.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="879.0" cy="278.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="690.6" cy="814.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="787.2" cy="500.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="800.5" cy="467.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="894.4" cy="254.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="911.8" cy="217.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="701.6" cy="856.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="305.5" cy="627.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="333.4" cy="624.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="644.2" cy="824.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1198.3" cy="415.4" r="3.2" opacity="0.55" />
+<circle class="ref" cx="781.1" cy="103.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="794.3" cy="108.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="745.0" cy="116.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="727.2" cy="128.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="695.6" cy="145.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="740.3" cy="151.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="711.1" cy="108.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1014.3" cy="490.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="559.1" cy="483.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="197.9" cy="856.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="132.3" cy="897.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="129.6" cy="840.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="207.1" cy="856.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="190.9" cy="845.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="147.2" cy="874.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="164.4" cy="883.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="137.4" cy="849.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="157.4" cy="823.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1193.0" cy="418.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="662.0" cy="387.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1245.9" cy="603.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1297.0" cy="583.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="683.7" cy="263.2" r="3.2" opacity="0.55" />
+<circle class="ref" cx="708.2" cy="268.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="721.7" cy="294.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1135.4" cy="483.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="905.8" cy="407.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="684.8" cy="839.5" r="3.2" opacity="0.55" />
+<circle class="ref" cx="591.1" cy="760.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="642.0" cy="849.0" r="3.2" opacity="0.55" />
+<circle class="ref" cx="751.8" cy="210.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="940.5" cy="214.6" r="3.2" opacity="0.55" />
+<circle class="ref" cx="977.6" cy="227.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="939.2" cy="188.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="944.4" cy="167.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="584.0" cy="382.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1069.6" cy="355.8" r="3.2" opacity="0.55" />
+<circle class="ref" cx="832.5" cy="126.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="471.5" cy="773.9" r="3.2" opacity="0.55" />
+<circle class="ref" cx="715.0" cy="836.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="677.1" cy="224.7" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1228.4" cy="585.3" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1244.4" cy="567.1" r="3.2" opacity="0.55" />
+<circle class="ref" cx="1035" cy="119" r="4" opacity="0.55" />
+<text x="1049" y="123">SNAC-DB reference antigens</text>
+<circle class="query" cx="1035" cy="145" r="6" />
+<text x="1049" y="149">Workbook proteins (highlighted and labeled)</text>
+</svg>
