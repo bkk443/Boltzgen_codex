@@ -105,4 +105,4 @@ If you want text results to appear directly in a pull request, export the latest
 python snacdb_antigen_compare/scripts/export_pr_results.py snacdb_antigen_compare
 ```
 
-When the workflow has produced `03_raw_results/protein_space_all_vs_all.tsv` and the downstream `build_protein_space_map.py` outputs, the exporter copies both the MDS and UMAP structure maps into `pr_results/` as the primary PR figures, along with the backing structure-only similarity matrix and node tables.
+When the workflow has produced `03_raw_results/protein_space_all_vs_all.tsv` and the downstream `build_protein_space_map.py` outputs from a real full run against the complete prepared SNAC-DB antigen reference, the exporter copies the MDS and UMAP structure maps into `pr_results/` as the primary PR figures, along with the backing structure-only similarity matrix and node tables.

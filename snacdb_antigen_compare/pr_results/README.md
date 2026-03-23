@@ -4,12 +4,7 @@ This directory intentionally contains a committed text snapshot of the latest ge
 
 ## Snapshot contents
 
-- `protein_space_map_mds_pr_snapshot.svg`: MDS structure-space map from the all-vs-all structural similarity matrix.
-- `protein_space_map_umap_pr_snapshot.svg`: UMAP structure-space map from the same all-vs-all structural similarity matrix.
-- `protein_space_similarity_matrix_pr_snapshot.csv`: full structure-only similarity matrix behind both maps.
-- `protein_space_nodes_mds_pr_snapshot.csv`: node metadata and 2D coordinates for the MDS map.
-- `protein_space_nodes_umap_pr_snapshot.csv`: node metadata and 2D coordinates for the UMAP map.
-- Structure map coverage in this snapshot: 28 workbook proteins and 116 SNAC-DB reference antigens.
+- Full protein-space MDS/UMAP artifacts are not committed in this checkout. Regenerate them from a real full run against the complete prepared SNAC-DB antigen reference before snapshotting them into `pr_results/`.
 - `snacdb_antigen_best_hits_pr_snapshot.csv`: nearest-neighbor summary table for each workbook protein.
 - `snacdb_antigen_top5_hits_pr_snapshot.csv`: top 5 SNAC-DB neighbors per workbook protein.
 - `unresolved_or_failed_targets_pr_snapshot.csv`: unresolved or failed targets at postprocessing time.
@@ -21,7 +16,7 @@ This directory intentionally contains a committed text snapshot of the latest ge
 ## Snapshot summary
 
 - Targets with best-hit rows: 28.
-- Protein-space nodes available in this checkout: 144.
+- Protein-space nodes available in this checkout: 0.
 - Unresolved or failed targets: 0.
 
 ## Strongest nearest-neighbor rows in this snapshot

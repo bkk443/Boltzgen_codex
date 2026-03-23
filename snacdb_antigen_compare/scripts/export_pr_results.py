@@ -126,11 +126,11 @@ def main():
     pr_dir = out_root / 'pr_results'
     pr_dir.mkdir(parents=True, exist_ok=True)
 
-    matrix_path = first_existing(out_root / '04_results/protein_space_similarity_matrix.csv', pr_dir / 'protein_space_similarity_matrix_pr_snapshot.csv')
-    nodes_mds_path = first_existing(out_root / '04_results/protein_space_nodes_mds.csv', pr_dir / 'protein_space_nodes_mds_pr_snapshot.csv')
-    nodes_umap_path = first_existing(out_root / '04_results/protein_space_nodes_umap.csv', pr_dir / 'protein_space_nodes_umap_pr_snapshot.csv')
-    map_mds_path = first_existing(out_root / '05_report/protein_space_map_mds.svg', pr_dir / 'protein_space_map_mds_pr_snapshot.svg')
-    map_umap_path = first_existing(out_root / '05_report/protein_space_map_umap.svg', pr_dir / 'protein_space_map_umap_pr_snapshot.svg')
+    matrix_path = out_root / '04_results/protein_space_similarity_matrix.csv'
+    nodes_mds_path = out_root / '04_results/protein_space_nodes_mds.csv'
+    nodes_umap_path = out_root / '04_results/protein_space_nodes_umap.csv'
+    map_mds_path = out_root / '05_report/protein_space_map_mds.svg'
+    map_umap_path = out_root / '05_report/protein_space_map_umap.svg'
     best_hits = first_existing(out_root / '04_results/snacdb_antigen_best_hits.csv', pr_dir / 'snacdb_antigen_best_hits_pr_snapshot.csv')
     top5_hits = first_existing(out_root / '04_results/snacdb_antigen_top5_hits.csv', pr_dir / 'snacdb_antigen_top5_hits_pr_snapshot.csv')
     unresolved = first_existing(out_root / '04_results/unresolved_or_failed_targets.csv', pr_dir / 'unresolved_or_failed_targets_pr_snapshot.csv')
@@ -160,7 +160,7 @@ def main():
         write_top5_heatmap(top5_rows, pr_dir)
 
     lines = ['# PR-visible SNAC-DB antigen comparison snapshot', '', 'This directory intentionally contains a committed text snapshot of the latest generated comparison outputs so the PR shows real results.', '', '## Snapshot contents', '']
-    if node_rows and (pr_dir / 'protein_space_map_mds_pr_snapshot.svg').exists() and (pr_dir / 'protein_space_map_umap_pr_snapshot.svg').exists():
+    if node_rows and matrix_path.exists() and map_mds_path.exists() and map_umap_path.exists():
         query_count = sum(1 for row in node_rows if row.get('node_type') == 'query_target')
         ref_count = sum(1 for row in node_rows if row.get('node_type') == 'reference_antigen')
         lines.extend([
@@ -172,7 +172,7 @@ def main():
             f'- Structure map coverage in this snapshot: {query_count} workbook proteins and {ref_count} SNAC-DB reference antigens.',
         ])
     else:
-        lines.append('- Protein-space map artifacts are not present in this checkout: regenerate after `03_raw_results/protein_space_all_vs_all.tsv` and the downstream build step are available.')
+        lines.append('- Full protein-space MDS/UMAP artifacts are not committed in this checkout. Regenerate them from a real full run against the complete prepared SNAC-DB antigen reference before snapshotting them into `pr_results/`.')
     lines.extend([
         '- `snacdb_antigen_best_hits_pr_snapshot.csv`: nearest-neighbor summary table for each workbook protein.',
         '- `snacdb_antigen_top5_hits_pr_snapshot.csv`: top 5 SNAC-DB neighbors per workbook protein.',

@@ -25,11 +25,8 @@
 
 ## Primary structure-space outputs
 
-- Structure maps written from all-vs-all structural similarities across 28 workbook proteins and 116 SNAC-DB reference antigens.
-- MDS figure: `05_report/protein_space_map_mds.svg`.
-- UMAP figure: `05_report/protein_space_map_umap.svg`.
-- Backing matrix: `04_results/protein_space_similarity_matrix.csv`.
-- Backing coordinates: `04_results/protein_space_nodes_mds.csv` and `04_results/protein_space_nodes_umap.csv`.
+- A full protein-space MDS/UMAP snapshot is intentionally not committed in this checkout.
+- Regenerate `03_raw_results/protein_space_all_vs_all.tsv` and the downstream structure-space outputs from a real full run against the complete prepared SNAC-DB antigen reference before snapshotting those figures.
 
 ## Per-target nearest SNAC-DB antigen neighbors
 
