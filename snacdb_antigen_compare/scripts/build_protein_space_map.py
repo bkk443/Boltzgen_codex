@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import json
 import sys
 from html import escape
 from pathlib import Path
@@ -198,16 +199,31 @@ def umap_embed(distance_matrix: np.ndarray):
     return reducer.fit_transform(distance_matrix)
 
 
+def protein_space_validation_status(path: Path):
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return {'status': 'invalid', 'reason': f'Could not parse validation marker at {path}.'}
+
+
 def main():
     out_root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('snacdb_antigen_compare')
     query_manifest = out_root / '02_queries/query_structure_manifest.csv'
     raw_report = out_root / '03_raw_results/protein_space_all_vs_all.tsv'
+    validation_path = out_root / '03_raw_results/protein_space_reference_validation.json'
     results_dir = out_root / '04_results'
     report_dir = out_root / '05_report'
     results_dir.mkdir(parents=True, exist_ok=True)
     report_dir.mkdir(parents=True, exist_ok=True)
 
     query_labels = load_query_labels(query_manifest)
+    validation = protein_space_validation_status(validation_path)
+    if not validation or validation.get('status') != 'complete':
+        reason = validation.get('reason') if validation else f'Validation marker missing at {validation_path}.'
+        print('Skipping protein-space map export because the complete SNAC-DB reference was not validated: ' + reason)
+        return
     rows = load_similarity_rows(raw_report)
     if not rows:
         print(f'No protein-space all-vs-all report found at {raw_report}; skipping map export.')

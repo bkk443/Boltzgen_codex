@@ -22,6 +22,7 @@ PROTEIN_SPACE_INPUT_DIR="$RAW_DIR/protein_space_inputs"
 PROTEIN_SPACE_TMP_DIR="$RAW_DIR/tmp_search_protein_space"
 PROTEIN_SPACE_REPORT="$RAW_DIR/protein_space_all_vs_all.tsv"
 PROTEIN_SPACE_LOG="$RAW_DIR/protein_space_search.log"
+PROTEIN_SPACE_VALIDATION="$RAW_DIR/protein_space_reference_validation.json"
 
 if [[ ! -d "$SNACDB_DIR" ]]; then
   echo "ERROR: SNAC-DB repo missing at $SNACDB_DIR; run setup_snacdb.sh first." >&2
@@ -78,6 +79,9 @@ if [[ -n "$REPORT_PATH" ]]; then
 else
   echo "WARNING: no Foldseek report found after SNAC-DB run." >&2
 fi
+
+echo "[plan] Validating that the complete SNAC-DB antigen reference is present before protein-space generation..."
+python "$OUT_DIR/scripts/reference_validation.py" "$REFERENCE_DIR" "$OUT_DIR/reference/REFERENCE_SOURCE.txt" "$PROTEIN_SPACE_VALIDATION"
 
 echo "[plan] Building a joint protein-space search set for all-vs-all structure mapping..."
 rm -rf "$PROTEIN_SPACE_INPUT_DIR" "$PROTEIN_SPACE_TMP_DIR"

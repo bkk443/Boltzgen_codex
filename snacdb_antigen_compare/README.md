@@ -58,6 +58,7 @@ python snacdb_antigen_compare/scripts/download_snacdb_reference.py \
 ```
 
 After download, extract the archive under `snacdb_antigen_compare/reference/snacdb_curated/` so that the merged curated-complex directory is available at `snacdb_antigen_compare/reference/snacdb_curated/all_complexes`.
+Keep the downloaded `SNAC-DataBase.zip` in that directory as well; the workflow now validates the extracted `all_complexes/` tree against the archive before it will generate protein-space outputs or export PR-visible MDS/UMAP figures.
 
 ## Optional: run the SNAC-DB hit-finding step directly
 
@@ -106,3 +107,4 @@ python snacdb_antigen_compare/scripts/export_pr_results.py snacdb_antigen_compar
 ```
 
 When the workflow has produced `03_raw_results/protein_space_all_vs_all.tsv` and the downstream `build_protein_space_map.py` outputs from a real full run against the complete prepared SNAC-DB antigen reference, the exporter copies the MDS and UMAP structure maps into `pr_results/` as the primary PR figures, along with the backing structure-only similarity matrix and node tables.
+The full-reference guard writes `03_raw_results/protein_space_reference_validation.json`; if that marker is missing or invalid, the map builder and PR exporter will refuse to treat protein-space artifacts as complete.

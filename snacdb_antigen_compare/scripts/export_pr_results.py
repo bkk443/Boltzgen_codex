@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import json
 import shutil
 import sys
 from html import escape
@@ -121,6 +122,15 @@ def write_top5_heatmap(top5_rows, pr_dir: Path):
     (pr_dir / 'top5_tm_heatmap.svg').write_text('\n'.join(svg) + '\n')
 
 
+def load_validation(path: Path):
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return {'status': 'invalid', 'reason': f'Could not parse validation marker at {path}.'}
+
+
 def main():
     out_root = Path(sys.argv[1]) if len(sys.argv) > 1 else Path('snacdb_antigen_compare')
     pr_dir = out_root / 'pr_results'
@@ -131,28 +141,37 @@ def main():
     nodes_umap_path = out_root / '04_results/protein_space_nodes_umap.csv'
     map_mds_path = out_root / '05_report/protein_space_map_mds.svg'
     map_umap_path = out_root / '05_report/protein_space_map_umap.svg'
+    validation_path = out_root / '03_raw_results/protein_space_reference_validation.json'
     best_hits = first_existing(out_root / '04_results/snacdb_antigen_best_hits.csv', pr_dir / 'snacdb_antigen_best_hits_pr_snapshot.csv')
     top5_hits = first_existing(out_root / '04_results/snacdb_antigen_top5_hits.csv', pr_dir / 'snacdb_antigen_top5_hits_pr_snapshot.csv')
     unresolved = first_existing(out_root / '04_results/unresolved_or_failed_targets.csv', pr_dir / 'unresolved_or_failed_targets_pr_snapshot.csv')
     runtime_summary = first_existing(out_root / '05_report/summary.md', pr_dir / 'runtime_summary_pr_snapshot.md')
 
-    for src, dest in [
-        (matrix_path, pr_dir / 'protein_space_similarity_matrix_pr_snapshot.csv'),
-        (nodes_mds_path, pr_dir / 'protein_space_nodes_mds_pr_snapshot.csv'),
-        (nodes_umap_path, pr_dir / 'protein_space_nodes_umap_pr_snapshot.csv'),
-        (map_mds_path, pr_dir / 'protein_space_map_mds_pr_snapshot.svg'),
-        (map_umap_path, pr_dir / 'protein_space_map_umap_pr_snapshot.svg'),
+    validation = load_validation(validation_path)
+    protein_space_ready = bool(validation and validation.get('status') == 'complete')
+
+    copy_pairs = [
         (best_hits, pr_dir / 'snacdb_antigen_best_hits_pr_snapshot.csv'),
         (top5_hits, pr_dir / 'snacdb_antigen_top5_hits_pr_snapshot.csv'),
         (unresolved, pr_dir / 'unresolved_or_failed_targets_pr_snapshot.csv'),
         (runtime_summary, pr_dir / 'runtime_summary_pr_snapshot.md'),
-    ]:
+    ]
+    if protein_space_ready:
+        copy_pairs = [
+            (matrix_path, pr_dir / 'protein_space_similarity_matrix_pr_snapshot.csv'),
+            (nodes_mds_path, pr_dir / 'protein_space_nodes_mds_pr_snapshot.csv'),
+            (nodes_umap_path, pr_dir / 'protein_space_nodes_umap_pr_snapshot.csv'),
+            (map_mds_path, pr_dir / 'protein_space_map_mds_pr_snapshot.svg'),
+            (map_umap_path, pr_dir / 'protein_space_map_umap_pr_snapshot.svg'),
+            *copy_pairs,
+        ]
+    for src, dest in copy_pairs:
         copy_if_needed(src, dest)
 
     best_rows = load_rows(best_hits)
     top5_rows = load_rows(top5_hits)
     unresolved_rows = load_rows(unresolved)
-    node_rows = load_rows(nodes_mds_path)
+    node_rows = load_rows(nodes_mds_path) if protein_space_ready else []
     best_sorted = sorted(best_rows, key=lambda row: float(row['tm_score']), reverse=True)
     if best_rows:
         write_best_hit_bar_chart(best_rows, pr_dir)
@@ -160,7 +179,7 @@ def main():
         write_top5_heatmap(top5_rows, pr_dir)
 
     lines = ['# PR-visible SNAC-DB antigen comparison snapshot', '', 'This directory intentionally contains a committed text snapshot of the latest generated comparison outputs so the PR shows real results.', '', '## Snapshot contents', '']
-    if node_rows and matrix_path.exists() and map_mds_path.exists() and map_umap_path.exists():
+    if protein_space_ready and node_rows and matrix_path.exists() and map_mds_path.exists() and map_umap_path.exists():
         query_count = sum(1 for row in node_rows if row.get('node_type') == 'query_target')
         ref_count = sum(1 for row in node_rows if row.get('node_type') == 'reference_antigen')
         lines.extend([
@@ -172,7 +191,10 @@ def main():
             f'- Structure map coverage in this snapshot: {query_count} workbook proteins and {ref_count} SNAC-DB reference antigens.',
         ])
     else:
+        reason = validation.get('reason') if validation else 'Validation marker missing.'
+        status = validation.get('status') if validation else 'missing'
         lines.append('- Full protein-space MDS/UMAP artifacts are not committed in this checkout. Regenerate them from a real full run against the complete prepared SNAC-DB antigen reference before snapshotting them into `pr_results/`.')
+        lines.append(f'- Protein-space snapshot guard status: `{status}`. {reason}')
     lines.extend([
         '- `snacdb_antigen_best_hits_pr_snapshot.csv`: nearest-neighbor summary table for each workbook protein.',
         '- `snacdb_antigen_top5_hits_pr_snapshot.csv`: top 5 SNAC-DB neighbors per workbook protein.',
