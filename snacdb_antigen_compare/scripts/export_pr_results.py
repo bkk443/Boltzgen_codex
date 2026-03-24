@@ -14,16 +14,16 @@ def load_rows(path: Path):
         return list(csv.DictReader(fh))
 
 
-def first_existing(*paths: Path):
-    for path in paths:
-        if path.exists():
-            return path
-    return paths[0]
-
-
 def copy_if_needed(src: Path, dest: Path):
     if src.exists() and src != dest:
         shutil.copyfile(src, dest)
+
+
+def sync_snapshot_file(src: Path, dest: Path):
+    if src.exists():
+        copy_if_needed(src, dest)
+    elif dest.exists():
+        dest.unlink()
 
 
 def write_best_hit_bar_chart(best_rows, pr_dir: Path):
@@ -142,10 +142,10 @@ def main():
     map_mds_path = out_root / '05_report/protein_space_map_mds.svg'
     map_umap_path = out_root / '05_report/protein_space_map_umap.svg'
     validation_path = out_root / '03_raw_results/protein_space_reference_validation.json'
-    best_hits = first_existing(out_root / '04_results/snacdb_antigen_best_hits.csv', pr_dir / 'snacdb_antigen_best_hits_pr_snapshot.csv')
-    top5_hits = first_existing(out_root / '04_results/snacdb_antigen_top5_hits.csv', pr_dir / 'snacdb_antigen_top5_hits_pr_snapshot.csv')
-    unresolved = first_existing(out_root / '04_results/unresolved_or_failed_targets.csv', pr_dir / 'unresolved_or_failed_targets_pr_snapshot.csv')
-    runtime_summary = first_existing(out_root / '05_report/summary.md', pr_dir / 'runtime_summary_pr_snapshot.md')
+    best_hits = out_root / '04_results/snacdb_antigen_best_hits.csv'
+    top5_hits = out_root / '04_results/snacdb_antigen_top5_hits.csv'
+    unresolved = out_root / '04_results/unresolved_or_failed_targets.csv'
+    runtime_summary = out_root / '05_report/summary.md'
 
     validation = load_validation(validation_path)
     protein_space_ready = bool(validation and validation.get('status') == 'complete')
@@ -166,7 +166,7 @@ def main():
             *copy_pairs,
         ]
     for src, dest in copy_pairs:
-        copy_if_needed(src, dest)
+        sync_snapshot_file(src, dest)
 
     best_rows = load_rows(best_hits)
     top5_rows = load_rows(top5_hits)
@@ -175,8 +175,14 @@ def main():
     best_sorted = sorted(best_rows, key=lambda row: float(row['tm_score']), reverse=True)
     if best_rows:
         write_best_hit_bar_chart(best_rows, pr_dir)
+    elif (pr_dir / 'best_hit_tm_scores.svg').exists():
+        (pr_dir / 'best_hit_tm_scores.svg').unlink()
     if top5_rows:
         write_top5_heatmap(top5_rows, pr_dir)
+    else:
+        for stale in [pr_dir / 'top5_tm_heatmap.svg', pr_dir / 'top5_tm_heatmap_matrix.csv']:
+            if stale.exists():
+                stale.unlink()
 
     lines = ['# PR-visible SNAC-DB antigen comparison snapshot', '', 'This directory intentionally contains a committed text snapshot of the latest generated comparison outputs so the PR shows real results.', '', '## Snapshot contents', '']
     if protein_space_ready and node_rows and matrix_path.exists() and map_mds_path.exists() and map_umap_path.exists():
