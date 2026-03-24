@@ -5,7 +5,9 @@ This directory intentionally contains a committed text snapshot of the latest ge
 ## Snapshot contents
 
 - Full protein-space MDS/UMAP artifacts are not committed in this checkout. Regenerate them from a real full run against the complete prepared SNAC-DB antigen reference before snapshotting them into `pr_results/`.
-- Protein-space snapshot guard status: `invalid`. Reference directory is missing: snacdb_antigen_compare/reference/snacdb_curated/all_complexes
+- Expected runtime UMAP path after a full run: `05_report/protein_space_map_umap.svg`.
+- Expected PR snapshot UMAP path after export: `pr_results/protein_space_map_umap_pr_snapshot.svg`.
+- Protein-space snapshot guard status: `missing`. Validation marker missing.
 - `snacdb_antigen_best_hits_pr_snapshot.csv`: nearest-neighbor summary table for each workbook protein.
 - `snacdb_antigen_top5_hits_pr_snapshot.csv`: top 5 SNAC-DB neighbors per workbook protein.
 - `unresolved_or_failed_targets_pr_snapshot.csv`: unresolved or failed targets at postprocessing time.

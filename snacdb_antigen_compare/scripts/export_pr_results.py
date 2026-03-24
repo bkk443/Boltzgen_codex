@@ -194,6 +194,8 @@ def main():
         reason = validation.get('reason') if validation else 'Validation marker missing.'
         status = validation.get('status') if validation else 'missing'
         lines.append('- Full protein-space MDS/UMAP artifacts are not committed in this checkout. Regenerate them from a real full run against the complete prepared SNAC-DB antigen reference before snapshotting them into `pr_results/`.')
+        lines.append('- Expected runtime UMAP path after a full run: `05_report/protein_space_map_umap.svg`.')
+        lines.append('- Expected PR snapshot UMAP path after export: `pr_results/protein_space_map_umap_pr_snapshot.svg`.')
         lines.append(f'- Protein-space snapshot guard status: `{status}`. {reason}')
     lines.extend([
         '- `snacdb_antigen_best_hits_pr_snapshot.csv`: nearest-neighbor summary table for each workbook protein.',
